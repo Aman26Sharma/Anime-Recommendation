@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+
+body {
+ background-image: url("background.png");
+ background-color: #cccccc;
+ height: 100%;
+ background-position: center;: 
+ background-size: cover;
+ background-repeat: no-repeat;
+ border-left-style: solid;
+ padding-left: 80px;
+}
+
+#nameid{
+  color: white
+}
+
+.result{
+	color: white;
+}
+
+.heading{
+	color: white;
+	font-size-adjust: 0.8;
+}
+
+.container-fluid{
+  margin: 90px;
+}
+
+#exampleInputEmail1{
+  width: 60%
+}
+
+p{
+	font-size: 15px;
+}
+

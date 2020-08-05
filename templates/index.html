@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../static/index.css">
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<title>Anime Recommendation</title>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<h1 class="heading">ANIME</h1>
+		<h1 class="heading">RECOMMENDATION</h1>
+		<p></p>
+		<form action="{{url_for('predict')}}" method="post">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1" id="nameid">Enter the name of Anime you like!</label>
+		    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="anime_name" required="required">
+		  </div>
+		  <button type="submit" class="btn btn-light">Search</button>
+		</form>
+		<br><br>
+		
+
+		{% for i in data %}
+			{% if i==data[0] %}
+				<p class="result" style="color:white;">The animes similar to {{ i }} are</p>
+			{% else %}
+				<ul><li class="result" style="color:white;">{{ i }}</li></ul>
+			{% endif %}
+		{% endfor %}
+
+		<h2 class="result" style="color:white;">{{ data2 }}</h2>
+		
+	</div>
+
+	
+</body>
+</html>
