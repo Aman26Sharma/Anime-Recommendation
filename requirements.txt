@@ -1,6 +1,5 @@
 alabaster==0.7.12
 argh==0.26.2
-astroid @ file:///C:/ci/astroid_1592481955828/work
 atomicwrites==1.4.0
 attrs==19.3.0
 autopep8 @ file:///tmp/build/80754af9/autopep8_1592412889138/work
